@@ -6,7 +6,8 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       position: 'fixed',
-      right: 0,
+      right: theme.spacing(1),
+      top: theme.spacing(1),
       '& > *': {
         color: theme.palette.secondary.main,
       },
