@@ -8,9 +8,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     socialButton: {
       display: 'block',
-      '& > *': {
-        fontSize: '2rem',
-      },
     },
   }),
 );
@@ -22,12 +19,12 @@ export default function SocialButton() {
     <Grid className={classes.root} spacing={1} container>
       <Grid item>
         <Link className={classes.socialButton} href="https://twitter.com/hamatatsu0">
-          <Twitter />Twitter
+          <Twitter fontSize="large" />Twitter
         </Link>
       </Grid>
       <Grid item>
         <Link className={classes.socialButton} href="https://github.com/hamatatsu">
-          <GitHub />GitHub
+          <GitHub fontSize="large" />GitHub
         </Link>
       </Grid>
     </Grid>
